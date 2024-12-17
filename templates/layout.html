@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+    
+    
+    <link rel="stylesheet" href="./static/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Serif:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gadugi:wght@400&display=swap"
+    />
+    
+    <title>IMS: {% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div class="home">
+      <main class="body">
+        {% block main %}{% endblock %}
+      <section class="head">
+        <h3 class="page-name">{{ page_title }}</h3>
+        <div class="dropdown">
+          <button class="profile" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-circle"></div>
+            <div class="name-intials">{{ nameintials }}</div>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="/logout">Log Out</a></li>
+          </ul>
+        </div>
+      </section>
+      </main>
+      <header class="main">
+        <a class="logo" style="text-decoration: none; color: var(--color-goldenrod);" href="/">IMS</a>
+        <div class="my-navbar">
+          <a class="income-expense-style" href="/"><p class="income-expense">Home</p></a>
+          <a class="income-expense-style" href="/income&expense"><p class="income-expense">Income & Expense</p></a>
+          <a class="income-expense-style" href="/stocks"><p class="income-expense">Stocks</p></a>
+          <a class="income-expense-style" href="/mutual_funds"><p class="income-expense">Mutual Funds</p></a>
+          <a class="income-expense-style" href="/real_estate"><p class="income-expense">Real Estate</p></a>
+
+          <a class="income-expense-style" href="/debt"><p class="income-expense">Fixed Deposit</p></a>
+          <a class="income-expense-style" href="/gold"><p class="income-expense">Gold</p></a>
+          <a class="income-expense-style" href="/crypto"><p class="income-expense">Crypto</p></a>
+          <a class="income-expense-style" href="/liabilities"><p class="income-expense">Liabilities</p></a>
+
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

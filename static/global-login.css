@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-gadugi: Gadugi;
+  --font-Nunito: Nunito;
+  --font-inter: Inter;
+  --font-roboto: Roboto;
+  --font-outfit: Outfit;
+  --font-noto-serif: "Noto Serif";
+
+  /* font sizes */
+  --font-size-9xl: 28px;
+  --font-size-77xl: 96px;
+  --font-size-21xl: 40px;
+  --font-size-17xl: 36px;
+  --font-size-7xl: 26px;
+  --font-size-5xl: 24px;
+  --font-size-29xl: 48px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-31xl: 50px;
+  --font-size-61xl: 80px;
+
+  /* Colors */
+  --color-white: #DFF2EB;
+  --color-black: #001A6E;
+  --color-goldenrod: #A594F9;
+  --color-lime-100: #FFB0B0;
+  --color-gold: #B9E5E8;
+  --color-red: #ff0000;
+  --color-gainsboro: #FFB0B0;
+
+  /* Gaps */
+  --gap-4xs: 9px;
+  --gap-lgi: 19px;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+  --br-10xs: 3px;
+}
+.body4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1120px;
+  height: 1132px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-61xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.login1 {
+  text-decoration: none;
+  margin-block-start: 0;
+  margin-block-end: 50px;
+  color: white);
+}
+.register {
+  margin: 0;
+}
+.navbar4 {
+  top: 298px;
+  left: calc(50% - 90px);
+}
+.logo4,
+.main4,
+.navbar4 {
+  position: absolute;
+}
+.logo4 {
+  text-decoration: none;
+  top: 80px;
+  left: calc(50% - 102px);
+  font-size: var(--font-size-77xl);
+  font-family: var(--font-calligraffitti);
+  color: var(--color-goldenrod);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 204px;
+  height: 126px;
+}
+.main4 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 320px;
+  height: 1134px;
+  text-align: left;
+  font-size: var(--font-size-31xl);
+  color: var(--color-white);
+  font-family: var(--font-gadugi);
+}
+.login {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1134px;
+  overflow: hidden;
+}

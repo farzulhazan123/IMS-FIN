@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/index.css" />
+<section class="below-body">
+  <div class="pie-chart-div">
+
+    <div class="pie-chart"><img src="data:image/png;base64,{{ image_base64 }}" alt="Pie Chart"></div>
+    <div class="legends">
+      <div class="real-estate">
+        <div class="colour"></div>
+        <div class="real-estate1">Real Estate</div>
+      </div>
+      <div class="debt">
+        <div class="colour1"></div>
+        <div class="real-estate1">FD</div>
+      </div>
+      <div class="gold">
+        <div class="colour2"></div>
+        <div class="real-estate1">Gold</div>
+      </div>
+      <div class="crypto">
+        <div class="colour3"></div>
+        <div class="real-estate1">Crypto</div>
+      </div>
+
+      <div class="stocks">
+        <div class="colour4"></div>
+        <div class="real-estate1">Stocks</div>
+      </div>
+      <div class="mutual-funds">
+        <div class="colour5"></div>
+        <div class="real-estate1">Mutual Funds</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="investment-div">
+    <a href="/mutual_funds">
+    <button class="mutual-funds2">
+      <img class="mf-icon" alt="" src="./static/public/mficon.svg" />
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="mutual-funds-mutual-container">
+        <p class="mutual-funds3">Mutual Funds</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ mutual_funds }}</b>
+        </p>
+      </div>
+    </button>
+    </a>
+    <a href="/stocks">
+    <button class="stocks2">
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="stocks-stocks">
+        <p class="mutual-funds3">Stocks</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ stocks_value }}</b>
+        </p>
+      </div>
+      <img
+        class="mf-icon"
+        alt=""
+        src="./static/public/-icon-chart-candle.svg"
+      />
+    </button>
+  </a>
+  <a href="/real_estate">
+    <button class="real-estate2">
+      <img
+        class="real-estate-icon"
+        alt=""
+        src="./static/public/realestateicon.svg"
+      />
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="real-estate-real-container">
+        <p class="mutual-funds3">Real Estate</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ real_estate }}</b>
+        </p>
+      </div>
+    </button>
+    </a>
+
+  <a href="/debt">
+    <button class="debt2">
+      <img class="debt-icon" alt="" src="./static/public/debticon.svg" />
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="mutual-funds-mutual-container">
+        <p class="mutual-funds3">Fixed Deposit</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ debt }}</b>
+        </p>
+      </div>
+    </button>
+  </a>
+  <a href="/gold">
+    <button class="gold2">
+      <img class="gold-icon" alt="" src="./static/public/goldicon.svg" />
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="mutual-funds-mutual-container">
+        <p class="mutual-funds3">Gold</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ gold }}</b>
+        </p>
+      </div>
+    </button>
+  </a>
+  <a href="/crypto">
+    <button class="crypto2">
+      <img class="bitcoin-icon" alt="" src="./static/public/bitcoinicon.svg" />
+      <img
+        class="silver-button-icon"
+        alt=""
+        src="./static/public/silverbutton.svg"
+      />
+      <div class="mutual-funds-mutual-container">
+        <p class="mutual-funds3">Crypto</p>
+        <p class="mutual-funds4">
+          <b class="mutual-funds5">{{ crypto }}</b>
+        </p>
+      </div>
+    </button>
+  </a>
+    <div class="current-investments">Current Investments:</div>
+  </div>
+</section>
+<section class="hero-section">
+  <div class="heading-div">
+    <h3 class="heading">Hi, {{ first_name }} !</h3>
+    <div class="sub-head">Here is your financial summary</div>
+  </div>
+  <div class="buttons-div">
+    <a href="/income&expense">
+    <button class="networth">
+      <img
+        class="networth-icon"
+        alt=""
+        src="./static/public/networthicon.svg"
+      />
+      <div class="networth1">
+        <div class="networth-number">Networth</div>
+        <b class="networth-number">{{ networth }}</b>
+      </div>
+      <img
+        class="golden-button-icon"
+        alt=""
+        src="./static/public/goldenbutton.svg"
+      />
+    </button>
+    </a>
+    <a href="/liabilities">
+    <button class="liabilities">
+      <img class="debt-icon1" alt="" src="./static/public/debticon1.svg" />
+      <div class="liabilities1">
+        <div class="networth-number">Liabilities</div>
+        <b class="networth-number">{{ liabilities }}</b>
+      </div>
+      <img
+        class="golden-button-icon"
+        alt=""
+        src="./static/public/goldenbutton.svg"
+      />
+    </button>
+    </a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stocks
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/stocks.css" />
+<main class="body-div1">
+    <div class="table-stocks">
+      <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+              <th class="text-start" scope="col">#</th>
+              <th class="text-start" scope="col">Name</th>
+              <th class="text-start" scope="col">Type</th>
+              <th class="text-start" scope="col">Quantity</th>
+              <th class="text-start" scope="col">Price</th>
+              <th class="text-start" scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for stock in stocks %}
+            <tr>
+              <th scope="row" class="text-start">{{ stock.number }}</th>
+              <td class="text-start"> {{ stock.stock_name }}</td>
+              <td class="text-start">{{ stock.classification }}</td>
+              <td class="text-start">{{ stock.quantity }}</td>
+              <td class="text-start">{{ stock.price_of_stock }}</td>
+              <td class="text-start">{{ stock.total_value_of_stock }}</td>
+
+              <form action="/delete-stock" method="post">
+                <input type="hidden" name="stock-id" value="{{ stock.id }}">
+                <td class="text-end">
+                  <button class="uni-delete" type="submit">
+                    <div class="uni-delete1">Delete</div>
+                    <img
+                      class="uni-delete-icon"
+                      alt=""
+                      src="./static/public/deleteicon.svg"
+                    />
+                  </button>
+                </td>
+              </form>
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+  </div>
+  <a href="/add-stocks">
+    <button class="add-button2">
+      <div class="button2"></div>
+      <div class="add2">+ ADD</div>
+    </button>
+  </a>
+    <div class="total-value-21900-container">
+      <p class="total-value">Total Value</p>
+      <p class="p">{{ totalvalue }}</p>
+    </div>
+    <div class="current-stocks">Current Stocks:</div>
+  </main>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Debt
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" action="/add-db" method="post">
+
+    <button class="save-mf-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+
+    <div class="quantity">
+      <div class="enter-a-valid">{{ priceofdb }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceofdb"
+        placeholder="Value"
+        type="number"
+      />
+    </div>
+
+    <div class="classifications">
+      <select class="classifications1" aria-label="Default select example" name="tenure">
+
+          <option selected disabled>Select Tenure</option>
+            <option value=1>1 </option>
+            <option value=3>3 </option>
+            <option value=5>5 </option>
+
+      </select>
+    <div class="choose-one-of">{{ tenure }}</div>
+  </div>
+
+    <div class="stockname">
+      <div class="choose-one-of">{{ dbname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="dbname"
+        id="dbname"
+        placeholder="Title"
+        type="text"
+      />
+    </div>
+
+  </form>
+{% endblock %}

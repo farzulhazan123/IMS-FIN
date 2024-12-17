@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="project" uuid="8dbb3cc0-12a7-4e73-ade1-9f19bf5b779d" type="SQLITE">
+      <base-info connect-type="DB_DEFAULT" product="SQLite" version="3.45.1" major-version="3" minor-version="45" jdbc-name="SQLite JDBC" jdbc-version="3.45.1.0" jdbc-major-version="3" jdbc-minor-version="45" />
+      <user-name />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="main" operator="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <choose-schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="main" operator="@" />
+          </node>
+        </introspection-scope>
+      </choose-schema-mapping>
+      <url>jdbc:sqlite:C:/Users/Administrator/Desktop/Investment-Tracker-main/finance1.db</url>
+      <remarks />
+      <vm-options />
+      <driver-info id="sqlite.xerial" />
+      <ssh-properties enabled="false" />
+      <jdbc-additional-properties>
+        <property name="enable_load_extension" value="true" />
+      </jdbc-additional-properties>
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+    <data-source name="copy url" uuid="8f155cf0-422d-4215-af55-aa43970319b9" type="SQLITE">
+      <base-info connect-type="DB_DEFAULT" product="SQLite" version="3.45.1" major-version="3" minor-version="45" jdbc-name="SQLite JDBC" jdbc-version="3.45.1.0" jdbc-major-version="3" jdbc-minor-version="45" />
+      <user-name />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="main" operator="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <choose-schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="main" operator="@" />
+          </node>
+        </introspection-scope>
+      </choose-schema-mapping>
+      <use-database kind="schema">
+        <name qname="main" operator="@" />
+      </use-database>
+      <url>jdbc:sqlite:C:/Users/Administrator/Desktop/Investment-Tracker-main/finance.db</url>
+      <remarks />
+      <vm-options />
+      <driver-info id="sqlite.xerial" />
+      <ssh-properties enabled="false" />
+      <jdbc-additional-properties>
+        <property name="enable_load_extension" value="true" />
+      </jdbc-additional-properties>
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>

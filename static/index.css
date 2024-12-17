@@ -1,0 +1,513 @@
+.pie-chart {
+  position: absolute;
+  top: 23px;
+  left: calc(50% - 147.5px);
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 0px solid var(--color-black);
+  box-sizing: border-box;
+  width: 297px;
+  height: 297px;
+}
+.colour {
+  position: relative;
+  border-radius: 50%;
+  background-color: #90ee90;
+  width: 37px;
+  height: 37px;
+}
+.real-estate1 {
+  position: relative;
+  font-weight: 500;
+}
+.real-estate {
+  position: absolute;
+  top: calc(50% - 18px);
+  right: 0;
+  width: 191px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour1 {
+  position: relative;
+  border-radius: 50%;
+  background-color: #ffdab9;
+  width: 37px;
+  height: 37px;
+}
+.debt {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 65px);
+  width: 130px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour2 {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  width: 37px;
+  height: 37px;
+}
+.gold {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 130px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour3 {
+  position: relative;
+  border-radius: 50%;
+  background-color: #f08080;
+  width: 37px;
+  height: 37px;
+}
+.crypto {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 135px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour4 {
+  position: relative;
+  border-radius: 50%;
+  background-color: #e6e6fa;
+  width: 37px;
+  height: 37px;
+}
+.international {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: 0;
+  width: 218px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour5 {
+  position: relative;
+  border-radius: 50%;
+  background-color: pink;
+  width: 37px;
+  height: 37px;
+}
+.stocks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.colour6 {
+  position: relative;
+  border-radius: 50%;
+  background-color: #afeeee;
+  width: 37px;
+  height: 37px;
+}
+.mutual-funds {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 218px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.legends {
+  position: absolute;
+  top: 373px;
+  left: calc(50% - 208.5px);
+  width: 418px;
+  height: 150px;
+}
+.pie-chart-div {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  border-radius: var(--br-3xs);
+  border: 3px solid var(--color-black);
+  box-sizing: border-box;
+  width: 449px;
+  height: 550px;
+}
+.mf-icon {
+  position: absolute;
+  height: 66.02%;
+  width: 9.58%;
+  top: 16.91%;
+  right: 84.43%;
+  bottom: 17.06%;
+  left: 5.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.silver-button-icon {
+  position: absolute;
+  top: calc(50% - 19.8px);
+  left: 397.8px;
+  border-radius: var(--br-10xs);
+  width: 22.4px;
+  height: 40.3px;
+}
+.mutual-funds3 {
+  margin-block-start: 0;
+  margin-block-end: 2px;
+}
+.mutual-funds3,
+.mutual-funds5 {
+  font-family: var(--font-roboto);
+}
+.mutual-funds4 {
+  margin: 0;
+}
+.mutual-funds-mutual-container {
+  position: absolute;
+  top: calc(50% - 28.7px);
+  left: 115px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  text-align: left;
+}
+.mutual-funds2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 136.4px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+.stocks-stocks {
+  position: absolute;
+  top: calc(50% - 28.7px);
+  left: calc(50% - 109.5px);
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  text-align: left;
+}
+.stocks2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+.real-estate-icon {
+  position: absolute;
+  height: 66.02%;
+  width: 9.09%;
+  top: 16.91%;
+  right: 84.92%;
+  bottom: 17.06%;
+  left: 5.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.real-estate-real-container {
+  position: absolute;
+  top: calc(50% - 25.7px);
+  left: 115px;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  text-align: left;
+}
+.real-estate2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 216.8px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+
+.debt-icon {
+  position: absolute;
+  height: 66.02%;
+  width: 9.53%;
+  top: 16.91%;
+  right: 84.48%;
+  bottom: 17.06%;
+  left: 5.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.debt2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 297.2px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+.gold-icon {
+  position: absolute;
+  height: 66.02%;
+  width: 10.07%;
+  top: 16.91%;
+  right: 83.94%;
+  bottom: 17.06%;
+  left: 5.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.gold2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 377.6px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+.bitcoin-icon {
+  position: absolute;
+  height: 66.02%;
+  width: 9.55%;
+  top: 16.91%;
+  right: 84.45%;
+  bottom: 17.06%;
+  left: 5.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.crypto2 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 458px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 449px;
+  height: 67.4px;
+}
+.current-investments {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  width: 290px;
+  height: 39.4px;
+}
+.investment-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 449px;
+  height: 605.7px;
+  font-size: var(--font-size-9xl);
+}
+.below-body {
+  position: absolute;
+  top: 511px;
+  left: calc(50% - 509px);
+  width: 1017px;
+  height: 621px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-serif);
+}
+.heading,
+.sub-head {
+  position: relative;
+  font-weight: 500;
+}
+.heading {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.sub-head {
+  font-size: var(--font-size-5xl);
+  color: var(--color-goldenrod);
+}
+.heading-div {
+  width: 327px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.networth-icon {
+  position: absolute;
+  height: 63.11%;
+  width: 15.51%;
+  top: 14.56%;
+  right: 78.05%;
+  bottom: 22.33%;
+  left: 6.43%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.networth-number {
+  position: relative;
+  font-size: var(--font-size-7xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: center;
+}
+.networth1 {
+  position: absolute;
+  top: 13px;
+  left: 155.3px;
+  width: 250px;
+  height: 69px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-4xs);
+}
+.golden-button-icon,
+.networth {
+  position: absolute;
+  top: 16.7px;
+  left: 379.2px;
+  border-radius: var(--br-8xs);
+  width: 40.2px;
+  height: 69.5px;
+}
+.networth {
+  cursor: pointer;
+  border: 3px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-white);
+  top: -1.5px;
+  left: -1.5px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 457px;
+  height: 103px;
+}
+.debt-icon1,
+.liabilities1 {
+  position: absolute;
+  overflow: hidden;
+}
+.debt-icon1 {
+  height: 67.67%;
+  width: 15.25%;
+  top: 12.33%;
+  right: 78.32%;
+  bottom: 20%;
+  left: 6.43%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.liabilities1 {
+  top: 13px;
+  left: 151.1px;
+  width: 250px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-4xs);
+}
+.liabilities {
+  cursor: pointer;
+  border: 3px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: -1.5px;
+  left: 561.5px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 457px;
+  height: 103px;
+}
+.buttons-div {
+  position: relative;
+  width: 1014px;
+  height: 100px;
+}
+.hero-section,
+.page-name {
+  position: absolute;
+  display: flex;
+}
+.hero-section {
+  top: 220px;
+  left: calc(50% - 509px);
+  width: 1017px;
+  height: 219px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 44px;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
+}

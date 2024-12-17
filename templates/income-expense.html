@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Income & Expense
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/income-expense.css" />
+<main class="body-div">
+  <div class="expense-div">
+    <div class="expense-body">
+      <div class="table-expense-div">
+        <div class="added-expense">Added Expense:</div>
+        <div class="my-expense-table">
+        {% for expense in expenses %}
+        <div class="my-table">
+          <div class="my-row">
+            <div class="income-type">{{ expense.type }}</div>
+            <div class="my-amount">Amount</div>
+            <div class="my-div">{{ expense.amount }}</div>
+            <form action="/edit-expense-form" method="post">
+            <input type="hidden" name="expense-id" value="{{ expense.id }}">
+            <input type="hidden" name="expense-type" value="{{ expense.type }}">
+            <button class="edit" autofocus="{true}" type="submit">
+              <div class="edit1">Edit</div>
+              <img
+                class="edit-icon"
+                alt=""
+                src="./static/public/editicon.svg"
+              />
+            </button>
+          </form>
+          <form action="/delete-expense" method="post">
+            <input type="hidden" name="expense-id" value="{{ expense.id }}">
+            <button class="delete" type="submit">
+              <div class="delete1">Delete</div>
+              <img
+                class="delete-icon"
+                alt=""
+                src="./static/public/deleteicon.svg"
+              />
+            </button>
+          </form>
+        </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+      <form class="add-expense" action="/add-expense" method="post">
+        <div class="add-expense1">Add Expense:</div>
+        <div class="mb-3">
+          <select class="type-expense-button" aria-label="Default select example" name="expense-type">
+              <option selected disabled>Type</option>
+              <option value="Monthly Expense">Monthly Expense</option>
+              <option value="Loan">Loan EMIs</option>
+              <option value="Insurance Premiums">Insurance Premiums</option>
+              <option value="Others">Others</option>
+          </select>
+      </div>
+        <input
+          required
+          autocomplete="off"
+          autofocus
+          class="monthly-expense-input"
+          name="expense-input"
+          id="expense-input"
+          placeholder="Expense"
+          type="number"
+        />
+
+        <button class="add-button" type="submit">
+          <div class="button"></div>
+          <div class="add">+ ADD</div>
+        </button>
+        <div class="incorrect-username">{{ incorrect_expense }}</div>
+      </form>
+      <div class="total-monthly-expense-container">
+        <span>Total Monthly Expense: </span>
+        <span class="span">{{ total_expense }}</span>
+      </div>
+    </div>
+    <h1 class="expense-heading">Expense:</h1>
+  </div>
+  <div class="income-div">
+    <div class="expense-body">
+      <div class="table-income-div">
+        <div class="added-income">Added Income:</div>
+        <div class="my-expense-table">
+        {% for income in incomes %}
+        <div class="my-table">
+          <div class="my-row">
+            <div class="income-type">{{ income.type }}</div>
+            <div class="my-amount">Amount</div>
+            <div class="my-div">{{ income.amount }}</div>
+            <form action="/edit-income-form" method="post">
+            <input type="hidden" name="income-id" value="{{ income.id }}">
+            <input type="hidden" name="income-type" value="{{ income.type }}">
+            <button class="edit" autofocus="{true}" type="submit">
+              <div class="edit1">Edit</div>
+              <img
+                class="edit-icon"
+                alt=""
+                src="./static/public/editicon.svg"
+              />
+            </button>
+          </form>
+            <form action="/delete-income" method="post">
+              <input type="hidden" name="income-id" value="{{ income.id }}">
+            <button class="delete" autofocus="{true}" type="submit">
+              <div class="delete1">Delete</div>
+              <img
+                class="delete-icon"
+                alt=""
+                src="./static/public/deleteicon.svg"
+              />
+            </button>
+          </form>
+        </div>
+        </div>
+        {% endfor %}
+      </div>
+      </div>
+      <form class="add-income" action="/add-income" method="post">
+        <div class="add-income1">Add Income:</div>
+        <div class="mb-3">
+          <select class="type-expense-button" aria-label="Default select example" name="income-type">
+              <option selected disabled>Type</option>
+              <option value="Post Tax Salary">Post Tax Salary</option>
+              <option value="Business Income">Business Income</option>
+              <option value="Rental Income">Rental Income</option>
+              <option value="Others">Others</option>
+          </select>
+      </div>
+        <input
+          required
+          autocomplete="off"
+          autofocus
+          class="monthly-income-input"
+          name="income-input"
+          id="income-input"
+          placeholder="Income"
+          type="number"
+        />
+
+        <button class="add-button1" type="submit">
+          <div class="button"></div>
+          <div class="add">+ ADD</div>
+        </button>
+        <div class="incorrect-username">{{ incorrect_income }}</div>
+      </form>
+      <div class="total-monthly-expense-container">
+        <span>Total Monthly Income: </span>
+        <span class="span1">{{ total_income }}</span>
+      </div>
+    </div>
+    <h1 class="expense-heading">Income:</h1>
+  </div>
+</main>
+{% endblock %}

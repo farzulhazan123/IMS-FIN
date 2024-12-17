@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Mutual Funds
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/stocks.css" />
+<main class="body-div1">
+    <div class="table-stocks">
+      <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+              <th class="text-start" scope="col">#</th>
+              <th class="text-start" scope="col">Name</th>
+              <th class="text-start" scope="col">Quantity</th>
+              <th class="text-start" scope="col">Price</th>
+              <th class="text-start" scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for mf in mutual_funds %}
+            <tr>
+              <th scope="row" class="text-start">{{ mf.number }}</th>
+              <td class="text-start"> {{ mf.mf_name }}</td>
+              <td class="text-start">{{ mf.quantity }}</td>
+              <td class="text-start">{{ mf.price_of_mf }}</td>
+              <td class="text-start">{{ mf.total_value_of_mf }}</td>
+
+              <form action="/delete-mf" method="post">
+                <input type="hidden" name="mf-id" value="{{ mf.id }}">
+                <td class="text-end">
+                  <button class="uni-delete" type="submit">
+                    <div class="uni-delete1">Delete</div>
+                    <img
+                      class="uni-delete-icon"
+                      alt=""
+                      src="./static/public/deleteicon.svg"
+                    />
+                  </button>
+                </td>
+              </form>
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+  </div>
+  <a href="/add-mf">
+    <button class="add-button2">
+      <div class="button2"></div>
+      <div class="add2">+ ADD</div>
+    </button>
+  </a>
+    <div class="total-value-21900-container">
+      <p class="total-value">Total Value</p>
+      <p class="p">{{ totalvalue }}</p>
+    </div>
+    <div class="current-stocks">Current Mutuals Funds:</div>
+  </main>
+{% endblock %}

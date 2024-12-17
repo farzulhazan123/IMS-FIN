@@ -1,0 +1,368 @@
+.added-expense {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 200px);
+  display: flex;
+  align-items: center;
+  width: 143px;
+  height: 0px;
+}
+.income-type {
+  position: absolute;
+  top: 7px;
+  left: 19px;
+  font-family: var(--font-outfit);
+}
+.my-amount {
+  top: 46px;
+  left: 19px;
+  font-size: var(--font-size-xl);
+  color: var(--color-gainsboro);
+}
+.my-amount,
+.my-div,
+.edit1 {
+  position: absolute;
+}
+.my-div {
+  top: 69px;
+  left: 19px;
+}
+.edit1 {
+  top: calc(50% - 11.5px);
+  left: calc(50% - 17px);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+}
+.edit-icon {
+  height: 54.84%;
+  width: 21.25%;
+  top: 19.35%;
+  right: 78.75%;
+  bottom: 25.81%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.delete1,
+.edit,
+.edit-icon {
+  position: absolute;
+}
+.edit {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 15px;
+  left: 294px;
+  border-radius: var(--br-3xs);
+  width: 80px;
+  height: 31px;
+  overflow: hidden;
+}
+.delete1 {
+  top: calc(50% - 11.5px);
+  left: calc(50% - 17px);
+  font-size: var(--font-size-xl);
+  font-family: var(--font-roboto);
+  color: var(--color-red);
+  text-align: left;
+}
+.delete-icon {
+  position: absolute;
+  height: 54.84%;
+  width: 21.25%;
+  top: 22.58%;
+  right: 78.75%;
+  bottom: 22.58%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.delete,
+.my-row {
+  border-radius: var(--br-3xs);
+}
+.delete {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 58px;
+  left: 294px;
+  width: 80px;
+  height: 31px;
+  overflow: hidden;
+}
+.my-row {
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 100px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+  margin-bottom: 10px;
+}
+.table-expense-div {
+  position: absolute;
+  width: 400px;
+}
+.my-table {
+  position: relative;
+  margin: 0;
+  border-radius: var(--br-3xs);
+  height: auto;
+  width: 100%;
+}
+.table-expense-div {
+  top: 404px;
+  left: calc(50% - 201.5px);
+  height: 332px;
+}
+.add-expense1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 25.5px;
+}
+.monthly-expense-input,
+.type-expense-button {
+  border: 2px solid var(--color-black);
+  position: absolute;
+  left: calc(50% - 200px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 400px;
+  height: 54.7px;
+}
+.type-expense-button {
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--color-white);
+  top: 44.3px;
+}
+.monthly-expense-input {
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-9xl);
+  background-color: transparent;
+  top: 117px;
+}
+.add,
+.button {
+  position: absolute;
+}
+.button {
+  top: -2px;
+  left: calc(50% - 202px);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gold);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 404px;
+  height: 58.7px;
+}
+.add {
+  top: calc(50% - 12.75px);
+  left: calc(50% - 42px);
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 67px;
+  height: 25.5px;
+}
+.add-button,
+.add-expense {
+  position: absolute;
+  width: 400px;
+}
+.add-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 190.3px;
+  left: calc(50% - 200px);
+  height: 54.7px;
+}
+.add-expense {
+  top: 120px;
+  left: 25px;
+  height: 245px;
+}
+.span {
+  font-weight: 600;
+  color: var(--color-red);
+}
+.total-monthly-expense-container {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 201.5px);
+  font-size: var(--font-size-5xl);
+}
+.expense-body {
+  position: absolute;
+  bottom: -1.5px;
+  left: -1.5px;
+  border-radius: var(--br-3xs);
+  border: 3px solid var(--color-black);
+  box-sizing: border-box;
+  width: 453px;
+  height: 770px;
+}
+.expense-heading {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-29xl);
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  width: 450px;
+  height: 65px;
+}
+.expense-div {
+  position: absolute;
+  bottom: 30px;
+  left: 567px;
+  width: 450px;
+  height: 848px;
+}
+.added-income {
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 200px);
+  display: flex;
+  align-items: center;
+  width: 134px;
+  height: 0px;
+}
+.table-income-div {
+  position: absolute;
+  width: 400px;
+}
+.table1 {
+  position: relative;
+  margin: 0;
+  border-radius: var(--br-3xs);
+  height: auto;
+  width: 100%;
+}
+.table-income-div {
+  top: 404px;
+  left: calc(50% - 201.5px);
+  height: 338.4px;
+}
+.add-income1 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 25.5px;
+}
+.type-income-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 44.3px;
+  left: calc(50% - 199.5px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 400px;
+  height: 54.7px;
+}
+.add-button1,
+.monthly-income-input {
+  background-color: transparent;
+  position: absolute;
+  width: 400px;
+  height: 54.7px;
+}
+.monthly-income-input {
+  border: 2px solid var(--color-black);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-9xl);
+  top: 117px;
+  left: calc(50% - 200.5px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+}
+.add-button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  top: 190.3px;
+  left: calc(50% - 199.5px);
+}
+.add-income {
+  position: absolute;
+  top: 120px;
+  left: 24px;
+  width: 401px;
+  height: 245px;
+}
+.span1 {
+  font-weight: 600;
+  color: #0f0;
+}
+.income-div {
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  width: 450px;
+  height: 848px;
+}
+.body-div {
+  position: absolute;
+  top: 251px;
+  left: 51px;
+  width: 1017px;
+  height: 881px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+
+.incorrect-username {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  color: var(--color-red);
+}
+.my-expense-table{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  max-height: 350px;
+  overflow-y: auto;
+}

@@ -1,0 +1,42 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+>
+  <!-- Circle with Rupee Symbol -->
+  <circle cx="140" cy="60" r="50" fill="#252930" stroke="white" stroke-width="5" />
+  <text
+    x="140"
+    y="75"
+    font-size="50"
+    font-weight="bold"
+    text-anchor="middle"
+    fill="white"
+  >
+    ₹
+  </text>
+
+  <!-- Sleeve -->
+  <g fill="#252930">
+    <rect x="20" y="140" width="50" height="80" />
+    <circle cx="30" cy="210" r="2" fill="white" />
+    <circle cx="40" cy="210" r="2" fill="white" />
+  </g>
+
+  <!-- Improved Hand -->
+  <path
+    d="
+      M 70 160
+      Q 90 155, 110 160
+      Q 130 165, 150 175
+      Q 160 180, 162 190
+      Q 164 200, 155 200
+      H 80
+      Q 60 200, 50 190
+      Q 45 185, 47 175
+      Q 50 165, 70 160
+      Z"
+    fill="#252930"
+  />
+</svg>

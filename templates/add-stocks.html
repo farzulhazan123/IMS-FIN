@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Stocks
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" action="/add-stocks" method="post">
+    <button class="save-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+    <div class="price">
+      <div class="enter-a-valid">{{ priceofstock }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceofstock"
+        placeholder="Price of Stock"
+        type="decimal"
+      />
+    </div>
+    <div class="quantity">
+      <div class="choose-one-of">{{ quantity }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="quantity"
+        placeholder="Quantity"
+        type="number"
+      />
+    </div>
+    <div class="classifications">
+        <select class="classifications1" aria-label="Default select example" name="classifications">
+            <option selected disabled>Classifications</option>
+            <option value="Large Cap">Large Cap</option>
+            <option value="Mid Cap">Mid Cap</option>
+            <option value="Small Cap">Small Cap</option>
+            <option value="Others">Others</option>
+        </select>
+      <div class="choose-one-of">{{ classifications }}</div>
+    </div>
+    <div class="stockname">
+      <div class="choose-one-of">{{ stockname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="stockname"
+        id="stockname"
+        placeholder="Stockname"
+        type="text"
+      />
+    </div>
+  </form>
+{% endblock %}

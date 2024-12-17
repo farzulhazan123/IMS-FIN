@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./static/global-login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Serif:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gadugi:wght@400&display=swap"
+    />
+
+    <title>IMS: {% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <div class="login">
+      <main class="body4">
+        {% block main %}{% endblock %}
+      </main>
+      <header class="main4">
+        <div class="navbar4">
+          <a href="login" style="text-decoration: none; color: white;"><p class="login1">Login</p></a>
+          <a href="register" style="text-decoration: none; color: white;"><p class="register">Register</p></a>
+        </div>
+        <a class="logo4" href="/">IMS</a>
+      </header>
+    </div>
+  </body>
+</html>

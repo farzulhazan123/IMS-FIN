@@ -1,0 +1,140 @@
+.save {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 39px);
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-outfit);
+  color: var(--color-black);
+  text-align: center;
+}
+.save-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gold);
+  position: absolute;
+  bottom: -40px;
+  left: calc(50% - 248px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+}
+.enter-a-valid,
+.price-input {
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  position: absolute;
+}
+.enter-a-valid {
+  top: 80px;
+  left: 4px;
+  font-size: var(--font-size-9xl);
+  color: var(--color-red);
+  text-align: left;
+}
+.price-input {
+  border: 2px solid var(--color-black);
+  font-size: var(--font-size-13xl);
+  background-color: transparent;
+  top: 0;
+  left: calc(50% - 250px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+}
+.price,
+.quantity {
+  position: absolute;
+  top: 420px;
+  left: 2px;
+  width: 500px;
+  height: 115px;
+}
+.quantity {
+  top: 280px;
+}
+.choose-one-of,
+.classifications1 {
+  position: absolute;
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  text-align: left;
+}
+.choose-one-of {
+  top: 80px;
+  left: 0;
+  font-size: var(--font-size-9xl);
+  color: var(--color-red);
+}
+.classifications1 {
+  top: calc(50% - 20px);
+  left: 23px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.classifications1 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 250px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+}
+.classifications {
+  top: 140px;
+  left: 2px;
+  height: 115px;
+}
+.add-stocks-form,
+.classifications,
+.stockname {
+  position: absolute;
+  width: 500px;
+}
+.stockname {
+  top: 0;
+  left: 2px;
+  height: 115px;
+}
+.add-stocks-form {
+  top: calc(50% - 326px);
+  left: calc(50% - 250px);
+  height: 600px;
+}
+
+.save-mf-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gold);
+  position: absolute;
+  bottom: -40px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+  top: 420px;
+  left: 2px;
+}
+
+.save-lb-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gold);
+  position: absolute;
+  bottom: -40px;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+  top: 280px;
+  left: 2px;
+}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Crypto
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" action="/add-ct" method="post">
+    <button class="save-mf-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+    <div class="quantity">
+      <div class="enter-a-valid">{{ priceofct }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceofct"
+        placeholder="Price of 1 crypto"
+        type="decimal"
+      />
+    </div>
+    <div class="classifications">
+      <div class="choose-one-of">{{ quantity }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="quantity"
+        placeholder="Quantity"
+        type="decimal"
+      />
+    </div>
+
+    <div class="stockname">
+      <div class="choose-one-of">{{ ctname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="ctname"
+        id="ctname"
+        placeholder="Token name"
+        type="text"
+      />
+    </div>
+  </form>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Real Estate
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" action="/add-rs" method="post">
+
+    <button class="save-mf-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+
+    <div class="quantity">
+      <div class="enter-a-valid">{{ priceofrs }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceofrs"
+        placeholder="Value of Real Estate"
+        type="number"
+      />
+    </div>
+
+    <div class="classifications">
+      <select class="classifications1" aria-label="Default select example" name="type">
+          <option selected disabled>Type</option>
+          <option value="Commercial Real Estate">Commercial Real Estate</option>
+          <option value="REITs">REITs</option>
+          <option value="Fractional Ownership">Fractional Ownership</option>
+          <option value="Others">Others</option>
+      </select>
+    <div class="choose-one-of">{{ type }}</div>
+  </div>
+
+    <div class="stockname">
+      <div class="choose-one-of">{{ rsname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="rsname"
+        id="rsname"
+        placeholder="Title for the Real Estate"
+        type="text"
+      />
+    </div>
+    
+  </form>
+{% endblock %}

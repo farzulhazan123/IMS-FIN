@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Gold
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" action="/add-gl" method="post">
+
+    <button class="save-mf-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+
+    <div class="quantity">
+      <div class="enter-a-valid">{{ priceofgl }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceofgl"
+        placeholder="Value of Gold"
+        type="number"
+      />
+    </div>
+
+    <div class="classifications">
+      <select class="classifications1" aria-label="Default select example" name="type">
+          <option selected disabled>Type</option>
+          <option value="SGB">SGB</option>
+          <option value="Physical Gold">Physical Gold</option>
+          <option value="Digital Gold">Digital Gold</option>
+          <option value="Others">Others</option>
+      </select>
+    <div class="choose-one-of">{{ type }}</div>
+  </div>
+
+    <div class="stockname">
+      <div class="choose-one-of">{{ glname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="glname"
+        id="glname"
+        placeholder="Title"
+        type="text"
+      />
+    </div>
+
+  </form>
+{% endblock %}

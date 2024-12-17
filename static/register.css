@@ -1,0 +1,112 @@
+.create {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 59px);
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-outfit);
+  color: var(--color-black);
+  text-align: center;
+}
+.sign-in-button1 {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gold);
+  position: absolute;
+  bottom: -4px;
+  left: calc(50% - 248px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+}
+.incorrect-password1,
+.password3 {
+  position: absolute;
+  top: 130px;
+  left: 4px;
+  font-size: var(--font-size-9xl);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  color: var(--color-red);
+  text-align: left;
+}
+.password3 {
+  top: 0;
+  left: 0;
+  color: var(--color-black);
+}
+.password2 {
+  position: absolute;
+  top: 524px;
+  left: 2px;
+  width: 500px;
+  height: 174px;
+}
+.username-already-taken,
+.username3 {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  font-size: var(--font-size-9xl);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  color: var(--color-red);
+  text-align: center;
+}
+.username3 {
+  top: 0;
+  color: var(--color-black);
+}
+.last-input,
+.username2 {
+  position: absolute;
+  width: 500px;
+}
+.username2 {
+  top: 320px;
+  left: 2px;
+  height: 174px;
+}
+.last-input {
+  border: 2px solid var(--color-black);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-13xl);
+  background-color: transparent;
+  top: 50px;
+  left: calc(50% - 250px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  height: 80px;
+}
+.last-name {
+  top: 160px;
+  left: 2px;
+  height: 130px;
+}
+.first-name,
+.last-name,
+.register-form {
+  position: absolute;
+  width: 500px;
+}
+.first-name {
+  top: 0;
+  left: 2px;
+  height: 130px;
+}
+.register-form {
+  top: calc(50% - 333px);
+  left: calc(50% - 250px);
+  height: 804px;
+}
+.page-name5 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 485px);
+  left: calc(50% - 360px);
+  font-size: inherit;
+  font-weight: 300;
+  font-family: inherit;
+}

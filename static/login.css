@@ -1,0 +1,133 @@
+.page-name4 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 468px);
+  left: calc(50% - 122px);
+  font-size: inherit;
+  font-weight: 300;
+  font-family: inherit;
+}
+.create-account,
+.sign-in {
+  position: absolute;
+  font-family: var(--font-outfit);
+  color: var(--color-black);
+  text-align: center;
+}
+.create-account {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  bottom: 0;
+  left: calc(50% - 96px);
+  font-size: var(--font-size-9xl);
+  font-weight: 300;
+  display: inline-block;
+}
+.sign-in {
+  top: calc(50% - 20px);
+  left: calc(50% - 56px);
+  font-size: var(--font-size-13xl);
+}
+.sign-in-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gold);
+  position: absolute;
+  bottom: 62px;
+  left: calc(50% - 245px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 500px;
+  height: 80px;
+}
+.forget-password,
+.incorrect-password,
+.password1 {
+  position: absolute;
+  font-weight: 300;
+  font-family: var(--font-outfit);
+}
+.incorrect-password {
+  top: 139px;
+  left: 4px;
+  font-size: var(--font-size-9xl);
+  color: var(--color-red);
+  text-align: left;
+}
+.forget-password,
+.password1 {
+  color: var(--color-black);
+}
+.password1 {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-9xl);
+  text-align: left;
+}
+.forget-password {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 2px;
+  right: 0;
+  font-size: var(--font-size-5xl);
+  text-align: right;
+  display: inline-block;
+}
+.password,
+.password-input {
+  position: absolute;
+  width: 500px;
+}
+.password-input {
+  border: 2px solid var(--color-black);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-13xl);
+  background-color: transparent;
+  top: 59px;
+  left: calc(50% - 250px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  height: 80px;
+}
+.password {
+  top: 229px;
+  left: 5px;
+  height: 174px;
+}
+.incorrect-username,
+.username1 {
+  position: absolute;
+  top: 139px;
+  left: 2px;
+  font-size: var(--font-size-9xl);
+  font-weight: 300;
+  font-family: var(--font-outfit);
+  color: var(--color-red);
+  text-align: center;
+}
+.username1 {
+  top: 0;
+  left: 0;
+  color: var(--color-black);
+}
+.login-form,
+.username {
+  position: absolute;
+  width: 500px;
+}
+.username {
+  top: 0;
+  left: 0;
+  height: 174px;
+}
+.login-form {
+  top: calc(50% - 261px);
+  left: calc(50% - 250px);
+  height: 600px;
+}

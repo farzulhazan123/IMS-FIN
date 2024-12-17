@@ -1,0 +1,43 @@
+{% extends "layout-login.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/login.css" />
+<h3 class="page-name4">LOGIN</h3>
+<form class="login-form" action="/login" method="post">
+  <a class="create-account" href="/register" style="text-decoration: none;">Create Account</a>
+  <button class="sign-in-button" type="submit">
+    <div class="sign-in">SIGN IN</div>
+  </button>
+  <div class="password">
+    <div class="incorrect-password">{{ incorrect_password }}</div>
+    <div class="password1">PASSWORD</div>
+    <a class="forget-password" href="/forget-password" style="text-decoration: none;">Forget password?</a>
+    <input
+      autocomplete="off"
+      autofocus
+      class="password-input"
+      name="password"
+      id="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div class="username">
+    <div class="incorrect-username">{{ incorrect_username }}</div>
+    <div class="username1">USERNAME</div>
+    <input
+      autocomplete="off"
+      autofocus
+      class="password-input"
+      name="username"
+      id="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+</form>
+{% endblock %}

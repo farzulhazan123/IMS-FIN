@@ -1,0 +1,53 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="200"
+  viewBox="0 0 200 200">
+
+  <!-- Background Rectangle -->
+  <rect
+    x="0"
+    y="0"
+    width="200"
+    height="200"
+    fill="#DFF2EB" />
+
+  <!-- Receipt body -->
+  <path
+    d="M50,30 Q60,20 80,20 H140 Q160,20 160,40 V160 L150,170 L130,150 L110,170 L90,150 L70,170 L50,150 Z"
+    stroke="#000"
+    stroke-width="6"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-linecap="round" />
+
+  <!-- Rupee Symbol Background -->
+  <rect
+    x="110"
+    y="110"
+    width="50"
+    height="50"
+    fill="#DFF2EB"
+    stroke="#DFF2EB" />
+
+  <!-- Rupee Symbol -->
+  <text
+    x="135"
+    y="135"
+    font-size="40"
+    font-weight="bold"
+    fill="#000"
+    text-anchor="middle"
+    dominant-baseline="middle">
+    ₹
+  </text>
+
+  <!-- Lines on the receipt -->
+  <line x1="60" y1="55" x2="140" y2="55" stroke="#000" stroke-width="6" stroke-linecap="round" />
+  <line x1="60" y1="75" x2="140" y2="75" stroke="#000" stroke-width="6" stroke-linecap="round" />
+  <line x1="60" y1="95" x2="140" y2="95" stroke="#000" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Shorter lines -->
+  <line x1="60" y1="115" x2="100" y2="115" stroke="#000" stroke-width="6" stroke-linecap="round" />
+  <line x1="60" y1="135" x2="100" y2="135" stroke="#000" stroke-width="6" stroke-linecap="round" />
+</svg>

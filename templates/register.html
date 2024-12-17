@@ -1,0 +1,66 @@
+{% extends "layout-login.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/register.css" />
+<form class="register-form" action="/register" method="post">
+    <button class="sign-in-button1">
+      <div class="create" type="submit">CREATE</div>
+    </button>
+    <div class="password2">
+      <div class="incorrect-password1">{{ incorrect_password }}</div>
+      <div class="password3">PASSWORD</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="last-input"
+        name="password"
+        id="password"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <div class="username2">
+      <div class="username-already-taken">{{ incorrect_username }}</div>
+      <div class="username3">USERNAME</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="last-input"
+        name="username"
+        id="username"
+        placeholder="Username"
+        type="text"
+      />
+    </div>
+    <div class="last-name">
+      <div class="username-already-taken">{{ incorrect_lastname }}</div>
+      <div class="password3">LAST NAME</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="last-input"
+        name="lastname"
+        id="lastname"
+        placeholder="Last Name"
+        type="text"
+      />
+    </div>
+    <div class="first-name">
+      <div class="username-already-taken">{{ incorrect_firstname }}</div>
+      <div class="username3">FIRST NAME</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="last-input"
+        name="firstname"
+        placeholder="First Name"
+        type="text"
+      />
+    </div>
+  </form>
+  <h3 class="page-name5">CREATE ACCOUNT</h3>
+{% endblock %}

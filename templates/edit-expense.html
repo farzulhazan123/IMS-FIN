@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit Expense
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/edit-incomeexpense.css" />
+<main class="body-div">
+    <div class="income-div">
+      <div class="income-body">
+        <form class="edit-income" action="/edit-expense" method="post">
+          <div class="edit-income1">Edit Expense:</div>
+          <div class="type-income-button"></div>
+          <div class="income">{{ expense_type }}</div>
+          <input type="hidden" name="expense-id" value="{{ id }}">
+          <input
+            required
+            autocomplete="off"
+            autofocus
+            class="monthly-income-input"
+            name="new-expense"
+            placeholder="New Expense"
+            type="number"
+          />
+
+          <button class="add-button">
+            <div class="button"></div>
+            <div class="edit">+ EDIT</div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  {% endblock %}

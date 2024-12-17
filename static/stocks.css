@@ -1,0 +1,83 @@
+.table-stocks {
+  position: absolute;
+  top: 221px;
+  left: calc(50% - 498px);
+  border-radius: var(--br-3xs);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1000px;
+  height: 615px;
+  overflow-y: auto;
+}
+.add2,
+.button2 {
+  position: absolute;
+}
+.button2 {
+  top: -2px;
+  left: calc(50% - 202px);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gold);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 404px;
+  height: 58.7px;
+}
+.add2 {
+  top: calc(50% - 12.75px);
+  left: calc(50% - 42px);
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-roboto);
+  color: var(--color-black);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 67px;
+  height: 25.5px;
+}
+.add-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 23px;
+  left: calc(50% + 88px);
+  width: 400px;
+  height: 54.7px;
+}
+.p,
+.total-value {
+  margin: 0;
+}
+.p {
+  font-weight: 500;
+}
+.current-stocks,
+.total-value-21900-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 50px;
+}
+.current-stocks {
+  top: 148px;
+  left: 2px;
+  font-size: 30px;
+  color: var(--color-black);
+}
+.body-div1 {
+  position: absolute;
+  top: 251px;
+  left: 51px;
+  width: 1000px;
+  height: 836px;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: #231f20;
+  font-family: var(--font-roboto);
+}
+.stocks-table{
+  position: absolute;
+  top: 200px;
+}

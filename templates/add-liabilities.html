@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add liabilities
+{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" href="./static/add-stocks.css" />
+<form class="add-stocks-form" albion="/add-lb" method="post">
+    <button class="save-lb-button" type="submit">
+      <div class="save">SAVE</div>
+    </button>
+    <div class="classifications">
+      <div class="choose-one-of">{{ priceoflb }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="priceoflb"
+        placeholder="Value"
+        type="number"
+      />
+    </div>
+
+    <div class="stockname">
+      <div class="choose-one-of">{{ lbname }}</div>
+      <input
+        autocomplete="off"
+        autofocus
+        class="price-input"
+        name="lbname"
+        id="lbname"
+        placeholder="Title"
+        type="text"
+      />
+    </div>
+  </form>
+{% endblock %}
